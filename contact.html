@@ -6,6 +6,11 @@
   <title>Contact | Evan B. Kozierachi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -41,7 +46,7 @@
             <textarea id="message" name="message" required="required"></textarea>
           </li>
         </ul>
-        <input type="submit">
+        <input type="submit" id="submit">
       </form>
 
     </section>
@@ -50,9 +55,49 @@
 
   <footer>
     <div class="container">
-      Copyright &copy; 
+      &copy; Copyright 2018, ebk13579 
     </div>
   </footer>
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB3VzPeVJF2Fx1mTWlPzTPUWZfrMB4sH9Q",
+    authDomain: "portfolio-redux2.firebaseapp.com",
+    databaseURL: "https://portfolio-redux2.firebaseio.com",
+    projectId: "portfolio-redux2",
+    storageBucket: "",
+    messagingSenderId: "191198665166"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
 
+  $("#submit").on("click", function(event) {
+      // prevent form from trying to submit/refresh the page
+      event.preventDefault();
+
+      // Capture User Inputs and store them into variables
+      var name = $("#name").val().trim();
+      var email = $("#email").val().trim();
+      
+      var message = $("#message").val().trim();
+
+      // Console log each of the user inputs to confirm we are receiving them
+      console.log(name);
+      console.log(email);
+      
+      console.log(message);
+
+  //  Store Click Data to Firebase in a JSON property called clickCount
+      // Note how we are using the Firebase .set() method
+      database.ref().set({
+        name: name,
+        email: email,
+        message: message
+      });
+
+    });
+
+</script>
 </html>
