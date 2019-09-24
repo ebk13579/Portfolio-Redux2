@@ -340,7 +340,7 @@ input[type=submit] {
 
   /**Portfolio**/
   .work{
-    width: 100% !important;
+    width: auto !important;
   }
 
   .main-section{
