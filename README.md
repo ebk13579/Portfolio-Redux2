@@ -1,6 +1,6 @@
 # Portfolio-Redux2
 
-Updated portfolio; redirects from evankozierachi.com;
+Updated portfolio; redirects from kozierachi.com;
 
 Vistors may leave comments, which upload to a Firebase database. 
 
