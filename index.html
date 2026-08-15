@@ -4,18 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About | Evan B. Kozierachi</title>
+  <meta name="description" content="Evan B. Kozierachi — research, bioethics, information science, technology, selected writing, and technical projects.">
+  <meta name="author" content="Evan B. Kozierachi">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Evan B. Kozierachi | Research, Bioethics & Technology">
+  <meta property="og:description" content="Research, bioethics, information science, technology, selected writing, and technical projects.">
+  <meta property="og:url" content="https://kozierachi.com/">
+  <link rel="canonical" href="https://kozierachi.com/">
+  <title>Evan B. Kozierachi | Research, Bioethics & Technology</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
 </head>
 
-<body>
+<body class="home-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header id="masthead">
-    <div class="container">
+    <div class="container header-inner">
       <a href="index.html" id="logo">Evan B. Kozierachi</a>
-      <nav>
-        <a href="index.html">About</a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="articles.html">Articles</a>
         <a href="contact.html">Contact</a>
@@ -23,32 +31,128 @@
     </div>
   </header>
 
-  <div id="main-container" class="about-wrapper container">
-    <section class="main-section">
-      <h1>About Me</h1>
-      <!-- <div class="auth-image"> -->
-        <img src="assets/images/Evan Blane Kozierachi (color).jpg" 
-        class="auth-image" alt="Evan B. Kozierachi">
-      <!-- </div> -->
-      
-      <p>Experienced Information Technology Manager with a demonstrated history of working in the law practice industry, who has transitioned to Health Care as a Medical Librarian, utilizing research & technology skills to create a 21st Century medical library.</p>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Research · Bioethics · Information Science · Technology</p>
+          <h1 id="hero-title">Connecting careful research with practical technology.</h1>
+          <p class="hero-copy">
+            I work at the intersection of research, medical information, bioethics, and technology—bringing a humanities-informed perspective to evidence, systems, and communication.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="articles.html">Explore writing</a>
+            <a class="button button-secondary" href="portfolio.html">View technical projects</a>
+          </div>
+        </div>
 
-      <p>Skilled in Nonprofit Organizations, OS X, Windows 10, Computer Repair, and Microsoft Office.</p>
-
-      <p>Strong information technology professional with a Master of Arts (M.A.) focused in Bioethics/Medical Ethics from Saint Joseph's University & a Bachelor of Arts in the Great Books Program from St. John's College (Santa Fe, NM campus).</p>
-
+        <figure class="portrait-card">
+          <img src="assets/images/Evan Blane Kozierachi (color).jpg" alt="Portrait of Evan B. Kozierachi">
+          <figcaption>Evan B. Kozierachi</figcaption>
+        </figure>
+      </div>
     </section>
 
-  </div>
+    <section class="section" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Research-minded, interdisciplinary, and technically fluent.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            My background spans information technology, medical librarianship, research, and bioethics. I am especially interested in how evidence is found, evaluated, organized, and communicated—and in how technology can make that work more useful to people.
+          </p>
+          <p>
+            Before moving into health care and medical information, I worked in information technology. That combination of technical practice and research experience continues to shape how I approach complex questions: understand the underlying information, make the structure clear, and build something that is usable.
+          </p>
+
+          <div class="credentials" aria-label="Education">
+            <div class="credential">
+              <strong>Master of Arts — Bioethics / Medical Ethics</strong>
+              <span>Saint Joseph's University</span>
+            </div>
+            <div class="credential">
+              <strong>Bachelor of Arts — Great Books Program</strong>
+              <span>St. John's College, Santa Fe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="writing-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected writing</p>
+          <h2 id="writing-title">Ideas across science, literature, and ethics.</h2>
+          <p>A selection from the essays and manuscripts already collected on this site.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="kicker">Philosophy of science</span>
+            <h3>Newton’s (Epistemological) Defect</h3>
+            <p>An essay engaging Einstein, Newton, and questions about the structure and limits of scientific knowledge.</p>
+            <a class="card-link" href="EBK-assets/On_Newton___Einstein.pdf">Read PDF →</a>
+          </article>
+
+          <article class="card">
+            <span class="kicker">Bioethics</span>
+            <h3>Affirming Life through Death</h3>
+            <p>A bioethics manuscript examining difficult questions around life, death, and ethical decision-making.</p>
+            <a class="card-link" href="EBK-assets/Bioethics Manuscript (under review) -- Affirming Life through Death.pdf">Read PDF →</a>
+          </article>
+
+          <article class="card">
+            <span class="kicker">Literature</span>
+            <h3>Tiresias in <em>The Waste Land</em></h3>
+            <p>A literary analysis centered on Tiresias and the interpretive structure of T. S. Eliot’s poem.</p>
+            <a class="card-link" href="EBK-assets/T.S._Elliot_s_The_Waste_Land.pdf">Read PDF →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section site-paths" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Explore</p>
+          <h2 id="explore-title">A portfolio with more than one dimension.</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="kicker">Projects</span>
+            <h3>Technical portfolio</h3>
+            <p>Web development, data, API, and software projects from earlier technical work.</p>
+            <a class="card-link" href="portfolio.html">View projects →</a>
+          </article>
+
+          <article class="card">
+            <span class="kicker">Writing</span>
+            <h3>Articles & essays</h3>
+            <p>Long-form work touching philosophy, literature, science, climate, and bioethics.</p>
+            <a class="card-link" href="articles.html">Browse articles →</a>
+          </article>
+
+          <article class="card">
+            <span class="kicker">Contact</span>
+            <h3>Get in touch</h3>
+            <p>Use the contact page for professional, research, or project-related correspondence.</p>
+            <a class="card-link" href="contact.html">Contact →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      &copy; Copyright 2019, ebk13579
+    <div class="container footer-inner">
+      <span>© 2026 Evan B. Kozierachi</span>
+      <a href="https://github.com/ebk13579">GitHub</a>
     </div>
   </footer>
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5413975.js"></script>
-  <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>
