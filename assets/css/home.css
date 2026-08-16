@@ -130,6 +130,9 @@
 }
 
 .hero {
+  /* Override the fixed mobile section dimensions in the legacy stylesheet. */
+  width: auto;
+  height: auto;
   padding: 78px 0 64px;
   background:
     radial-gradient(circle at 88% 15%, rgba(45, 140, 136, 0.13), transparent 28%),
